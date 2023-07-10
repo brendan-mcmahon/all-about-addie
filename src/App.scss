@@ -1,8 +1,8 @@
 @media (max-width: 768px) {
   html {
     background-image: url(./assets/stacked-waves-haikei.svg);
+    background-image: url(./assets/scales_small.svg);
     background-repeat: no-repeat;
-    background-attachment: fixed;
     background-size: cover;
     overflow-x: hidden;
     max-width: 100vw;
@@ -54,15 +54,22 @@
       z-index: 2;
     }
 
+    .about-container {
+      h1 {
+        text-shadow: 0px 0px 7px black,
+        0px 0px 7px black,
+        0px 0px 7px black,
+        0px 0px 7px black,
+        0px 0px 7px black,
+        0px 0px 7px black,
+        0px 0px 7px black,
+        0px 0px 7px black;
+      }
+    }
     .about {
       .about-block {
         color: black;
         padding: 16px;
-        backdrop-filter: blur(5px);
-        background-color: rgba(255, 255, 255, 0.65);
-        border-radius: 26px;
-        box-shadow: 35px 35px 68px 0px rgba(145, 192, 255, 0.5), inset -8px -8px 16px 0px rgba(145, 192, 255, 0.6),
-          inset 0px 11px 28px 0px rgb(255, 255, 255);
       }
     }
 
@@ -92,12 +99,17 @@
     }
   }
 }
+
 // media query for non-mobile
 @media (min-width: 768px) {
   html {
     height: 100%;
-    background-image: url(./assets/stacked-waves-haikei.svg);
-    background-size: 100% 100%; /* Stretch horizontally, adjust height automatically */
+    background-image: url(./assets/scales_large.svg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    overflow-x: hidden;
+    max-width: 100vw;
+    box-sizing: border-box;
   }
 
   h1 {
@@ -142,6 +154,17 @@
 
     .about-container {
       grid-area: about;
+
+      h1 {
+        text-shadow: 0px 0px 7px black,
+        0px 0px 7px black,
+        0px 0px 7px black,
+        0px 0px 7px black,
+        0px 0px 7px black,
+        0px 0px 7px black,
+        0px 0px 7px black,
+        0px 0px 7px black;
+      }
 
       .about {
         display: inline-flex;
